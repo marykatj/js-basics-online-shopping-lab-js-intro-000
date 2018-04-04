@@ -29,7 +29,7 @@ function viewCart() {
       var item = Object.keys(itemAndPrice)[0];
       let price = itemAndPrice[item];
 
-      itemsAndPrices.push(`${item} at ${price}`);
+      itemsAndPrices.push(`${item} at \$${price}`);
     }
 
     switch(itemsAndPrices.length) {

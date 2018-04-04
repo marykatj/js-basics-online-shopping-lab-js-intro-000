@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var itemName = name
+  var itemName = item
   var itemPrice = Math.floor(Math.Random() * 100) + 1;
   var newObject = Object.Assign({}, cart);
   newObject.push({[itemName] : itemPrice});

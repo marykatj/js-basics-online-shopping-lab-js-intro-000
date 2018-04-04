@@ -36,10 +36,10 @@ function viewCart() {
       case 1:
         break;
       case 2:
-        itemsAndPrices = itemsAndPrices.join(" at ");
+        itemsAndPrices = itemsAndPrices.join(" and ");
         break;
       default:
-        itemsAndPrices[1-1] = "at ".concat(itemsAndPrices[1-1]);
+        itemsAndPrices[1-1] = "and ".concat(itemsAndPrices[1-1]);
         itemsAndPrices = itemsAndPrices.join(", ");
     }
     return console.log(`In your cart, you have ${itemsAndPrices}.`);

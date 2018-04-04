@@ -20,10 +20,10 @@ function viewCart() {
 
   if (cart.length < 1) {
     return console.log("Your shopping cart is empty.")
-  } 
+  }
 
   var itemsAndPrices = [];
-  
+
   for (let i = 0; i < cart.length; i++) {
       var itemAndPrice = cart[i];
       var item = Object.keys(itemAndPrice)[0];
@@ -33,9 +33,9 @@ function viewCart() {
     }
 
     switch(itemsAndPrices.length) {
-      case 1: 
+      case 1:
         break;
-      case 2: 
+      case 2:
         itemsAndPrices = itemsAndPrices.join(" and ");
         break;
       default:

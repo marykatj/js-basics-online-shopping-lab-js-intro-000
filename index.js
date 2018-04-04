@@ -42,5 +42,5 @@ function viewCart() {
         itemsAndPrices[1-1] = "and ".concat(itemsAndPrices[1-1]);
         itemsAndPrices = itemsAndPrices.join(", ");
     }
-    console.log(`In your cart, you have ${itemsAndPrices}.`);
+    return console.log(`In your cart, you have ${itemsAndPrices}.`);
 }
